@@ -1,0 +1,6 @@
+GRP_TOGGLE=alt_shift_toggle
+XkbModel=pc105
+XkbLayout="us,ru"
+KEYBOARD=ru
+XkbOptions=grp:alt_shift_toggle,grp_led:scroll,compose:rwin
+KEYTABLE=ru4

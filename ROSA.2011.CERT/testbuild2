@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Send all output to a logfile and supress input
+
+typeset LOG="/opt/ROSA.2011.CERT/build.log"
+mv $LOG ${LOG}.old >/dev/null 2>&1
+[[ -t 1 ]] && echo "Writing to logfile '$LOG'."
+exec /opt/ROSA.2011.CERT/build |tee  $LOG 2>&1
+#exec /opt/ROSA.2011.beta2/build < /dev/null 2<&1
